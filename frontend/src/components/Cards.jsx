@@ -95,7 +95,7 @@ export default function Card() {
           <Grid item key={art.id} xs={12} sm={6} md={4} lg={3}>
             <MuiCard
               sx={{
-                height: 550,
+                height: 500,
                 width: 320,
                 borderRadius: 2,
                 backgroundColor: '#b3c8daff',

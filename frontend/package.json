@@ -3,15 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Marina982.github.io/seu-repositorio",
+  "homepage": "https://olavo-goes.github.io/ProjetoGerencia/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -19,7 +18,8 @@
     "@mui/material": "^7.3.2",
     "animate.css": "^4.1.1",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
