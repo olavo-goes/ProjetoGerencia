@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header leftText="Assasins Creed Smurfs"
+/>
       <Cards />
     </>
   )
