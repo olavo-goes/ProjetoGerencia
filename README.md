@@ -65,6 +65,12 @@ Exemplo de ajuste no CSS:
   object-fit: contain;
 }
 
+Algumas Imagens dos Personagens:
+<img width="100" height="150" alt="Shay Cormac" src="https://github.com/user-attachments/assets/84883910-9d83-40d3-a8cc-47525a81be4c" />
+<img width="100" height="150" alt="Evie Frey" src="https://github.com/user-attachments/assets/84173c14-bd44-4139-9323-3e966df18ef6" />
+<img width="100" height="150" alt="Bayek" src="https://github.com/user-attachments/assets/9f1c20c3-8d10-4cdf-9095-6d01fc7d671a" />
+
+
 📱 Responsividade
 O layout foi pensado para se adaptar bem a diferentes tamanhos de tela. Para garantir isso, use flexbox e media queries conforme necessário.
 
