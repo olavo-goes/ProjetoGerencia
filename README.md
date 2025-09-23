@@ -78,7 +78,12 @@ Algumas Imagens dos Personagens:
 
 📱 Responsividade
 O layout foi pensado para se adaptar bem a diferentes tamanhos de tela. Para garantir isso, use flexbox e media queries conforme necessário.
+
+
+
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/5863ecc2-3f95-4c0f-9922-7c52e8a0adc9" />
+
+
 <img width="201" height="447" alt="image" src="https://github.com/user-attachments/assets/63dcfe72-9761-49fc-b61f-34c387323a1d" />
 
 
