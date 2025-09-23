@@ -17,7 +17,7 @@ const artworks = [
   {
     id: 2,
     title: 'Kassandra',
-    image: 'public/images/kassandra.png',
+    image: 'images/Kassandra.png',
     description: 'Kassandra, mercenária espartana descendente de Leônidas, vive a Odisseia durante a Guerra do Peloponeso.',
   },
   {
