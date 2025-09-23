@@ -85,11 +85,11 @@ const artworks = [
 export default function Card() {
   return (
     <Box sx={{ padding: { xs: 2, sm: 4 } }}>
-      <Grid 
-        container 
-        spacing={3} 
-        justifyContent="center" 
-        alignItems="stretch" 
+      <Grid
+        container
+        spacing={3}
+        justifyContent="center"
+        alignItems="stretch"
       >
         {artworks.map((art) => (
           <Grid item key={art.id} xs={12} sm={6} md={4} lg={3}>
@@ -110,7 +110,7 @@ export default function Card() {
             >
               <CardMedia
                 component="img"
-                height="300" 
+                height="300"
                 width="200"
                 image={art.image}
                 alt={art.title}
@@ -128,9 +128,9 @@ export default function Card() {
                 <Typography className="title" variant="subtitle1" sx={{ fontWeight: 'bold', mb: 1 }}>
                   {art.title}
                 </Typography>
-                <Typography 
-                  variant="body2" 
-                  sx={{ 
+                <Typography
+                  variant="body2"
+                  sx={{
                     display: '-webkit-box',
                     WebkitLineClamp: 3, // 
                     WebkitBoxOrient: 'vertical',

@@ -1,16 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import Cards from './components/Cards'
-import Header from './components/Header'; 
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
-  const [,] = useState(0)
-
   return (
     <>
-      <Header leftText="Assasins Creed Smurfs"
-/>
+      <Header leftText="Assasins Creed Smurfs" />
       <Cards />
+      <Footer leftText="Desenvolvido por Olavo O.M Goes e Marina O.M Goes" />
     </>
   )
 }
