@@ -13,7 +13,7 @@ function App() {
       <>
         <Header
           leftText="Assasins Creed Smurfs"
-          logoSrc={`${import.meta.env.BASE_URL}images/LogoSmurfsCreed.png`}
+          logoSrc={`${import.meta.env.BASE_URL}images/Logo.png`}
         />
         <Cards />
         <Footer leftText="Desenvolvido por Olavo O.M Goes e Marina O.M Goes" />

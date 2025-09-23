@@ -14,7 +14,7 @@ export default function Header({ title, subtitle, leftText, logoSrc, logoAlt }) 
           <img
   src={logoSrc}
   alt={logoAlt || "Logo"}
-  style={{ height: "75px", width: "70px", borderRadius: "25px", borderColor: "black", border: "solid 4px #245883ff"}}
+  style={{ height: "75px", width: "70px", borderRadius: "15px", borderColor: "black", border: "solid 4px #5f90b8ff"}}
 />
         </div>
       </div>
