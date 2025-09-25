@@ -9,10 +9,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import CloudIcon from '@mui/icons-material/Cloud';
-import NightsStayIcon from '@mui/icons-material/NightsStay';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const artworks = [
   { id: 1, title: 'Altair', image: 'images/Altair.png', description: 'Altair Ibn-La’Ahad, Mestre Assassino da Ordem Levantina, conhecido por recuperar a honra da Irmandade.' },
@@ -50,7 +46,12 @@ export default function Card() {
 
   return (
     <Box sx={{ padding: { xs: 2, sm: 4 } }}>
-      <Grid container spacing={3} justifyContent="center" alignItems="stretch">
+      <Grid
+        container
+        spacing={3}
+        justifyContent="center"
+        alignItems="stretch"
+      >
         {artworks.map((art) => (
           <Grid item key={art.id} xs={12} sm={6} md={4} lg={3}>
             <MuiCard
