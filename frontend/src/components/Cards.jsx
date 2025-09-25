@@ -6,7 +6,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
-
 const artworks = [
   {
     id: 1,
@@ -84,7 +83,7 @@ const artworks = [
 
 export default function Card() {
   return (
-    <Box sx={{ padding: { xs: 2, sm: 4 } }}>
+    <Box sx={{ padding: { xs: 2, sm: 4 }, mt: { xs: 4, sm: 8 } }}>
       <Grid
         container
         spacing={3}
@@ -132,7 +131,7 @@ export default function Card() {
                   variant="body2"
                   sx={{
                     display: '-webkit-box',
-                    WebkitLineClamp: 3, // 
+                    WebkitLineClamp: 3,
                     WebkitBoxOrient: 'vertical',
                     overflow: 'hidden',
                     textOverflow: 'ellipsis',

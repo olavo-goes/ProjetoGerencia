@@ -4,6 +4,7 @@ import Cards from './components/Cards';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { HashRouter as Router } from 'react-router-dom';
+import SmurfCarousel from './components/SmurfCaroussel';
 
 function App() {
   const [,] = useState(0);
@@ -11,10 +12,12 @@ function App() {
   return (
     <Router>
       <>
+      
         <Header
           leftText="Assasins Creed Smurfs"
           logoSrc={`${import.meta.env.BASE_URL}images/LogoSmurfsCreed.png`}
         />
+        <SmurfCarousel/>
         <Cards />
         <Footer leftText="Desenvolvido por Olavo O.M Goes e Marina O.M Goes" />
       </>
