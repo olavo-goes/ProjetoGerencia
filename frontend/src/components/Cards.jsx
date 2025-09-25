@@ -9,20 +9,73 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import CloudIcon from '@mui/icons-material/Cloud';
+import NightsStayIcon from '@mui/icons-material/NightsStay';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+
 
 const artworks = [
-  { id: 1, title: 'Altair', image: 'images/Altair.png', description: 'Altair Ibn-La’Ahad, Mestre Assassino da Ordem Levantina, conhecido por recuperar a honra da Irmandade.' },
-  { id: 2, title: 'Kassandra', image: 'images/Kassandra.png', description: 'Kassandra, mercenária espartana descendente de Leônidas, vive a Odisseia durante a Guerra do Peloponeso.' },
-  { id: 3, title: 'Ezio', image: 'images/Ezio.png', description: 'Ezio Auditore da Firenze, o Assassino mais icônico, liderou a Irmandade e expandiu sua influência.' },
-  { id: 4, title: 'Randvi', image: 'images/Randvi.png', description: 'Randvi, braço direito de Eivor em Ravensthorpe, estratégica e leal, tem papel vital na colônia viking.' },
-  { id: 5, title: 'Eivor', image: 'images/Eivor.png', description: 'Eivor Varinsdottir, guerreira viking determinada, lidera sua tribo rumo a novas terras na Inglaterra.' },
-  { id: 6, title: 'Edward Kenway', image: 'images/Edward Kenway.png', description: 'Edward Kenway, pirata carismático e Assassino relutante, navegou pelo Caribe na Era Dourada da Pirataria.' },
-  { id: 7, title: 'Bayek', image: 'images/Bayek.png', description: 'Bayek de Siuá, último Medjay, fundador da Ordem dos Assassinos, lutou por justiça no Egito Antigo.' },
-  { id: 8, title: 'Connor Kenway', image: 'images/Connor Kenway.png', description: 'Connor Kenway, nascido Ratonhnhaké:ton, protegeu sua tribo e lutou pela liberdade na Revolução Americana.' },
-  { id: 9, title: 'Shay Cormac', image: 'images/Shay Cormac.png', description: 'Shay Patrick Cormac, ex-Assassino, se voltou contra sua Irmandade e se tornou Templário implacável.' },
-  { id: 10, title: 'Arno Dorian', image: 'images/Arno Dorian.png', description: 'Arno Dorian, órfão criado pela Ordem, viveu a Revolução Francesa tentando expiar suas falhas.' },
-  { id: 11, title: 'Evie Frye', image: 'images/Evie Frye.png', description: 'Evie Frye, mestra da furtividade, atuou nas sombras em Londres ao lado de seu irmão Jacob.' },
-  { id: 12, title: 'Basim Ibn Ishaq', image: 'images/Basim Ibn Ishaq.png', description: 'Basim, astuto Mestre Assassino em Bagdá, esconde segredos que ligam seu destino ao dos Isu.' },
+  { id: 1,
+     title: 'Altair', 
+     image: 'images/Altair.png', 
+     description: 'Altair Ibn-La’Ahad, Mestre Assassino da Ordem Levantina, conhecido por recuperar a honra da Irmandade.'
+     },
+  { id: 2, 
+    title: 'Kassandra', 
+    image: 'images/Kassandra.png', 
+    description: 'Kassandra, mercenária espartana descendente de Leônidas, vive a Odisseia durante a Guerra do Peloponeso.' 
+  },
+  { id: 3, 
+    title: 'Ezio', 
+    image: 'images/Ezio.png', 
+    description: 'Ezio Auditore da Firenze, o Assassino mais icônico, liderou a Irmandade e expandiu sua influência.' 
+  },
+  { id: 4, 
+    title: 'Randvi', 
+    image: 'images/Randvi.png', 
+    description: 'Randvi, braço direito de Eivor em Ravensthorpe, estratégica e leal, tem papel vital na colônia viking.' 
+  },
+  { id: 5, 
+    title: 'Eivor', 
+    image: 'images/Eivor.png', 
+    description: 'Eivor Varinsdottir, guerreira viking determinada, lidera sua tribo rumo a novas terras na Inglaterra.' 
+  },
+  { id: 6, 
+    title: 'Edward Kenway', 
+    image: 'images/Edward Kenway.png', 
+    description: 'Edward Kenway, pirata carismático e Assassino relutante, navegou pelo Caribe na Era Dourada da Pirataria.' 
+  },
+  { id: 7, 
+    title: 'Bayek', 
+    image: 'images/Bayek.png', 
+    description: 'Bayek de Siuá, último Medjay, fundador da Ordem dos Assassinos, lutou por justiça no Egito Antigo.'
+   },
+  { id: 8, 
+    title: 'Connor Kenway', 
+    image: 'images/Connor Kenway.png', 
+    description: 'Connor Kenway, nascido Ratonhnhaké:ton, protegeu sua tribo e lutou pela liberdade na Revolução Americana.' 
+  },
+  { id: 9, 
+    title: 'Shay Cormac', 
+    image: 'images/Shay Cormac.png', 
+    description: 'Shay Patrick Cormac, ex-Assassino, se voltou contra sua Irmandade e se tornou Templário implacável.' 
+  },
+  { id: 10, 
+    title: 'Arno Dorian', 
+    image: 'images/Arno Dorian.png', 
+    description: 'Arno Dorian, órfão criado pela Ordem, viveu a Revolução Francesa tentando expiar suas falhas.' 
+  },
+  { id: 11,
+     title: 'Evie Frye',
+      image: 'images/Evie Frye.png', 
+      description: 'Evie Frye, mestra da furtividade, atuou nas sombras em Londres ao lado de seu irmão Jacob.' 
+    },
+  { id: 12, 
+    title: 'Basim Ibn Ishaq', 
+    image: 'images/Basim Ibn Ishaq.png', 
+    description: 'Basim, astuto Mestre Assassino em Bagdá, esconde segredos que ligam seu destino ao dos Isu.' 
+  },
 ];
 
 const getAnimationType = (id) => {
@@ -45,7 +98,7 @@ export default function Card() {
   }, []);
 
   return (
-    <Box sx={{ padding: { xs: 2, sm: 4 } }}>
+    <Box sx={{ padding: { xs: 2, sm: 4 }, mt: { xs: 6, sm: 10 } }}>
       <Grid
         container
         spacing={3}
